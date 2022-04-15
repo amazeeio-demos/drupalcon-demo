@@ -1,7 +1,7 @@
-uuid: cb64ba0a-e3d0-4316-a3ec-bf19b838c803
-name: 'Drupal Demo 2022'
+uuid: 382a9b98-0282-4c7c-8ae9-e27fc9a6b8ea
+name: 'Drush Site-Install'
 mail: admin@example.com
-slogan: '2022 FTW'
+slogan: ''
 page:
   403: ''
   404: ''
