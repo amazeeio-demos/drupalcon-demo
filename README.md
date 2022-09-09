@@ -1,4 +1,4 @@
-# Composer template for Drupal projects hosted on amazee.io - DrupalCon Portland 2022
+# Composer template for Drupal projects hosted on amazee.io - DrupalCon Demo
 
 This project template should provide a kickstart for managing your site
 dependencies with [Composer](https://getcomposer.org/). It is based on the [original Drupal Composer Template](https://github.com/drupal-composer/drupal-project), but includes everything necessary to run on amazee.io (either the local development environment or on amazee.io servers.)
@@ -29,7 +29,7 @@ dependencies with [Composer](https://getcomposer.org/). It is based on the [orig
     docker-compose exec cli composer install
     ```
 
-4. Visit the new site @ `http://example-drupalcon-portland-2022.docker.amazee.io`
+4. Visit the new site @ `http://drupalcon-demo.docker.amazee.io`
 
 * If any steps fail, you're safe to rerun from any point.
 Starting again from the beginning will just reconfirm the changes.
