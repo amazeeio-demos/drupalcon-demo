@@ -2,6 +2,9 @@ docker-compose-yaml: docker-compose.yml
 
 project: drupalcon-demo
 
+ssh: ssh.main.lagoon-core.test6.amazee.io:22
+api: https://api.main.lagoon-core.test6.amazee.io/graphql
+
 tasks:
 #   pre-rollout:
 #     - run:
@@ -44,6 +47,9 @@ environments:
         service: cli
 
 lagoon-sync:
+  ssh:
+    host: "ssh.main.lagoon-core.test6.amazee.io"
+    port: "22"
   mariadb:
     config:
       hostname: "${MARIADB_HOST:-mariadb}"
