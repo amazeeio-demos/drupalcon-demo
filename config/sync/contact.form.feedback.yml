@@ -1,4 +1,4 @@
-uuid: d71a5ff3-0890-4a84-ae2b-996692f9af40
+uuid: 0c59306c-d9a3-4918-94dc-292c71f1260a
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - admin@example.com
+  - alanna.burke@amazee.io
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
