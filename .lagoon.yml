@@ -1,6 +1,9 @@
 docker-compose-yaml: docker-compose.yml
 
-project: example-drupalcon-portland-2022
+project: drupalcon-demo
+
+ssh: ssh.main.lagoon-core.test6.amazee.io:22
+api: https://api.main.lagoon-core.test6.amazee.io/graphql
 
 tasks:
 #   pre-rollout:
@@ -15,8 +18,8 @@ tasks:
         command: |
             if tables=$(drush sqlq 'show tables;') && [ -z "$tables" ] && [[ "$LAGOON_GIT_BRANCH" != "main" ]]; then
                 # no drupal installed, sync DB from main branch
-                drush -y sql-sync @lagoon.example-drupalcon-portland-2022-main @self
-                drush -y rsync @lagoon.example-drupalcon-portland-2022-main:%files @self:%files
+                drush -y sql-sync @lagoon.drupalcon-demo-main @self
+                drush -y rsync @lagoon.drupalcon-demo-main:%files @self:%files
                 drush -y cr
             fi
         service: cli
@@ -44,6 +47,9 @@ environments:
         service: cli
 
 lagoon-sync:
+  ssh:
+    host: "ssh.main.lagoon-core.test6.amazee.io"
+    port: "22"
   mariadb:
     config:
       hostname: "${MARIADB_HOST:-mariadb}"

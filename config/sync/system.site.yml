@@ -1,6 +1,6 @@
-uuid: 53988a1a-3d49-4b45-8787-0f292e0ea141
-name: 'Drush Site-Install'
-mail: admin@example.com
+uuid: b20f9924-a67f-4519-bcfb-69d4f384e1d5
+name: 'DrupalCon Demo'
+mail: alanna.burke@amazee.io
 slogan: ''
 page:
   403: ''
